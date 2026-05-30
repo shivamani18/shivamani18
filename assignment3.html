@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 3 - Portfolio UI</title>
+
+  <!-- Tailwind CSS CDN Link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-white">
+
+  <!-- Navbar -->
+  <nav class="bg-slate-900 px-6 py-4 shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 id="mainHeader" class="text-2xl font-bold text-cyan-400">
+        My Portfolio
+      </h1>
+
+      <div class="hidden md:flex gap-6">
+        <a href="#" class="hover:text-cyan-400">Home</a>
+        <a href="#" class="hover:text-cyan-400">About</a>
+        <a href="#" class="hover:text-cyan-400">Skills</a>
+        <a href="#" class="hover:text-cyan-400">Projects</a>
+        <a href="#" class="hover:text-cyan-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <p id="smallText" class="text-cyan-400 font-semibold mb-3">
+        Hello, I am
+      </p>
+
+      <h2 id="nameText" class="text-5xl font-extrabold mb-4">
+        Shivamani
+      </h2>
+
+      <h3 id="roleText" class="text-2xl text-slate-300 mb-6">
+        Frontend Web Developer
+      </h3>
+
+      <p id="aboutText" class="text-slate-400 leading-7 mb-8">
+        I create beautiful and responsive websites using HTML, Tailwind CSS,
+        Bootstrap and JavaScript. I am learning web development step by step.
+      </p>
+
+      <div class="flex gap-4">
+        <button id="getStartedBtn"
+          class="bg-cyan-500 text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-cyan-400">
+          Get Started
+        </button>
+
+        <button class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-400 hover:text-slate-950">
+          Download CV
+        </button>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <div id="profileCircle"
+        class="w-72 h-72 rounded-full bg-gradient-to-br from-cyan-400 to-blue-700 flex items-center justify-center shadow-2xl">
+        <span id="emojiIcon" class="text-8xl">👨‍💻</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="bg-slate-900 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="skillsHeader" class="text-3xl font-bold text-center mb-10">
+        My Skills
+      </h2>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-slate-800 p-6 rounded-2xl text-center hover:-translate-y-2 duration-300">
+          <h3 class="text-xl font-bold text-orange-400">HTML</h3>
+          <p class="text-slate-400 mt-2">Web structure</p>
+        </div>
+
+        <div class="bg-slate-800 p-6 rounded-2xl text-center hover:-translate-y-2 duration-300">
+          <h3 class="text-xl font-bold text-blue-400">CSS</h3>
+          <p class="text-slate-400 mt-2">Web styling</p>
+        </div>
+
+        <div class="bg-slate-800 p-6 rounded-2xl text-center hover:-translate-y-2 duration-300">
+          <h3 class="text-xl font-bold text-cyan-400">Tailwind</h3>
+          <p class="text-slate-400 mt-2">Utility classes</p>
+        </div>
+
+        <div class="bg-slate-800 p-6 rounded-2xl text-center hover:-translate-y-2 duration-300">
+          <h3 class="text-xl font-bold text-yellow-400">JavaScript</h3>
+          <p class="text-slate-400 mt-2">Interactivity</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">
+      My Projects
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-slate-900 p-6 rounded-2xl shadow-lg border border-slate-700">
+        <h3 class="text-xl font-bold text-cyan-400 mb-3">Portfolio Website</h3>
+        <p class="text-slate-400">
+          A personal portfolio page created using Tailwind CSS.
+        </p>
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-2xl shadow-lg border border-slate-700">
+        <h3 class="text-xl font-bold text-cyan-400 mb-3">Landing Page</h3>
+        <p class="text-slate-400">
+          A responsive landing page with modern UI design.
+        </p>
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-2xl shadow-lg border border-slate-700">
+        <h3 class="text-xl font-bold text-cyan-400 mb-3">Registration Form</h3>
+        <p class="text-slate-400">
+          A student registration form using HTML and Tailwind CSS.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-slate-900 py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+      <p class="text-slate-400 mb-6">
+        Email: shivamani@example.com
+      </p>
+
+      <button class="bg-cyan-500 text-slate-950 font-bold px-8 py-3 rounded-xl hover:bg-cyan-400">
+        Send Message
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-center py-6 border-t border-slate-800">
+    <p class="text-slate-400">
+      © 2026 Shivamani Portfolio. Created using Tailwind CSS and JavaScript.
+    </p>
+  </footer>
+
+  <!-- JavaScript DOM Manipulation -->
+  <script>
+    const button = document.getElementById("getStartedBtn");
+    const mainHeader = document.getElementById("mainHeader");
+    const smallText = document.getElementById("smallText");
+    const nameText = document.getElementById("nameText");
+    const roleText = document.getElementById("roleText");
+    const aboutText = document.getElementById("aboutText");
+    const profileCircle = document.getElementById("profileCircle");
+    const emojiIcon = document.getElementById("emojiIcon");
+    const skillsHeader = document.getElementById("skillsHeader");
+
+    button.addEventListener("click", function () {
+      mainHeader.textContent = "Welcome to My Portfolio";
+      smallText.textContent = "You clicked Get Started!";
+      nameText.textContent = "Frontend Developer";
+      roleText.textContent = "HTML | Tailwind CSS | JavaScript";
+      aboutText.textContent = "This content was changed using JavaScript DOM manipulation. The header, text, button and image section changed dynamically.";
+      button.textContent = "Started Successfully";
+      skillsHeader.textContent = "Skills Updated Using DOM";
+
+      emojiIcon.textContent = "🚀";
+
+      mainHeader.classList.remove("text-cyan-400");
+      mainHeader.classList.add("text-yellow-400");
+
+      profileCircle.classList.remove("from-cyan-400", "to-blue-700");
+      profileCircle.classList.add("from-yellow-400", "to-red-600");
+
+      button.classList.remove("bg-cyan-500", "hover:bg-cyan-400");
+      button.classList.add("bg-yellow-400", "hover:bg-yellow-300");
+    });
+  </script>
+
+</body>
+</html>

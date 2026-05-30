@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 4 - Responsive Landing Page</title>
+  <link rel="stylesheet" href="./output3.css" />
+</head>
+
+<body class="bg-white text-slate-800">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 id="mainHeader" class="text-3xl font-extrabold text-indigo-600">
+        EduTech
+      </h1>
+
+      <div class="hidden md:flex gap-8 font-medium">
+        <a href="#" class="hover:text-indigo-600">Home</a>
+        <a href="#" class="hover:text-indigo-600">Courses</a>
+        <a href="#" class="hover:text-indigo-600">Features</a>
+        <a href="#" class="hover:text-indigo-600">Contact</a>
+      </div>
+
+      <button id="navButton" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">
+        Join Now
+      </button>
+    </nav>
+  </header>
+
+  <section id="heroSection" class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <h2 id="heroTitle" class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+          Learn Web Development Easily
+        </h2>
+
+        <p id="heroText" class="text-lg text-slate-600 mt-6 leading-8">
+          Build real-world projects using HTML, CSS, Tailwind CSS, Bootstrap and JavaScript.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <button id="getStartedBtn"
+            class="bg-indigo-600 text-white px-8 py-3 rounded-xl hover:bg-indigo-700">
+            Get Started
+          </button>
+
+          <button class="border border-indigo-600 text-indigo-600 px-8 py-3 rounded-xl hover:bg-indigo-600 hover:text-white">
+            View Courses
+          </button>
+        </div>
+      </div>
+
+      <div id="courseCard" class="bg-white rounded-3xl shadow-2xl p-8">
+        <div class="bg-indigo-600 text-white rounded-2xl p-6 mb-5">
+          <h3 id="cardTitle" class="text-2xl font-bold">Frontend Development</h3>
+          <p id="cardText" class="mt-2">HTML, Tailwind CSS, Bootstrap, JavaScript</p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="bg-slate-100 p-4 rounded-xl font-medium">✅ Live Projects</div>
+          <div class="bg-slate-100 p-4 rounded-xl font-medium">✅ Mobile Responsive Design</div>
+          <div class="bg-slate-100 p-4 rounded-xl font-medium">✅ Industry Based Assignments</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-extrabold text-center mb-12 text-slate-900">
+      Our Features
+    </h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="p-8 bg-white shadow-lg rounded-2xl border">
+        <div class="text-5xl mb-4">💻</div>
+        <h3 class="text-2xl font-bold mb-3">Practical Coding</h3>
+        <p class="text-slate-600">Practice with real assignments and projects.</p>
+      </div>
+
+      <div class="p-8 bg-white shadow-lg rounded-2xl border">
+        <div class="text-5xl mb-4">📱</div>
+        <h3 class="text-2xl font-bold mb-3">Responsive Design</h3>
+        <p class="text-slate-600">Create websites for mobile, tablet and desktop.</p>
+      </div>
+
+      <div class="p-8 bg-white shadow-lg rounded-2xl border">
+        <div class="text-5xl mb-4">🚀</div>
+        <h3 class="text-2xl font-bold mb-3">Career Ready</h3>
+        <p class="text-slate-600">Learn frontend skills required in industry.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const getStartedBtn = document.getElementById("getStartedBtn");
+    const mainHeader = document.getElementById("mainHeader");
+    const navButton = document.getElementById("navButton");
+    const heroTitle = document.getElementById("heroTitle");
+    const heroText = document.getElementById("heroText");
+    const cardTitle = document.getElementById("cardTitle");
+    const cardText = document.getElementById("cardText");
+    const courseCard = document.getElementById("courseCard");
+
+    getStartedBtn.addEventListener("click", function () {
+      mainHeader.textContent = "Web Development Started";
+      heroTitle.textContent = "Welcome to Frontend Learning";
+      heroText.textContent = "You clicked the Get Started button. This content changed using DOM manipulation.";
+      cardTitle.textContent = "JavaScript DOM Manipulation";
+      cardText.textContent = "Header, paragraph and card content changed dynamically.";
+      navButton.textContent = "Enrolled";
+      getStartedBtn.textContent = "Learning Started";
+
+      mainHeader.classList.remove("text-indigo-600");
+      mainHeader.classList.add("text-green-600");
+
+      courseCard.classList.add("scale-105", "duration-300", "border-4", "border-green-500");
+    });
+  </script>
+
+</body>
+</html>

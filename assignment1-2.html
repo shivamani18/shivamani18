@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Student Registration Form</h1>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Register Here</h2>
+
+      <form class="student-form">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="course">Course</label>
+          <select id="course" name="course">
+            <option>Select Course</option>
+            <option>BCA</option>
+            <option>BSc IT</option>
+            <option>BBA</option>
+            <option>BCom</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="button-group full-width">
+          <button type="submit" class="btn-submit">Submit</button>
+          <button type="reset" class="btn-reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="table-section">
+      <h2>Sample Student Data Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Email</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rahul Sharma</td>
+            <td>BCA</td>
+            <td>rahul@example.com</td>
+            <td>9876543210</td>
+          </tr>
+          <tr>
+            <td>Priya Singh</td>
+            <td>BSc IT</td>
+            <td>priya@example.com</td>
+            <td>9876501234</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Student Registration Form</p>
+  </footer>
+
+</body>
+</html>

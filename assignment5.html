@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 5 - Mobile First Layout</title>
+  <link rel="stylesheet" href="output4.css" />
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+  <header id="mainHeaderBox" class="bg-emerald-600 text-white p-5">
+    <div class="max-w-6xl mx-auto">
+      <h1 id="mainHeader" class="text-2xl md:text-4xl font-bold">
+        Mobile First Website
+      </h1>
+
+      <p id="headerText" class="mt-2 text-emerald-100">
+        Designed first for mobile, then improved for larger screens.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+
+    <section class="bg-white rounded-2xl shadow-lg p-6 md:p-10">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+
+        <div>
+          <h2 id="mainTitle" class="text-3xl md:text-5xl font-extrabold text-slate-900">
+            Build Responsive Layouts
+          </h2>
+
+          <p id="mainText" class="mt-5 text-slate-600 leading-7">
+            Mobile-first design means we start with small screens and then use responsive classes.
+          </p>
+
+          <button id="getStartedBtn"
+            class="mt-6 w-full sm:w-auto bg-emerald-600 text-white px-8 py-3 rounded-xl hover:bg-emerald-700">
+            Get Started
+          </button>
+        </div>
+
+        <div id="imageBox" class="bg-emerald-100 rounded-3xl p-8 text-center">
+          <div id="emojiIcon" class="text-8xl mb-4">📱</div>
+          <h3 id="imageTitle" class="text-2xl font-bold text-emerald-700">
+            Responsive UI
+          </h3>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="font-bold text-xl text-emerald-700 mb-2">Small Screen</h3>
+        <p class="text-slate-600">Default Tailwind classes apply to mobile screens.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="font-bold text-xl text-emerald-700 mb-2">Tablet</h3>
+        <p class="text-slate-600">Use sm and md classes for tablet layouts.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="font-bold text-xl text-emerald-700 mb-2">Laptop</h3>
+        <p class="text-slate-600">Use lg classes to improve laptop view.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="font-bold text-xl text-emerald-700 mb-2">Desktop</h3>
+        <p class="text-slate-600">Use xl classes for large screen designs.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-900 text-white text-center py-6 mt-10">
+    <p>© 2026 Mobile First Layout. Created using Tailwind CSS 3.</p>
+  </footer>
+
+  <script>
+    const getStartedBtn = document.getElementById("getStartedBtn");
+    const mainHeader = document.getElementById("mainHeader");
+    const headerText = document.getElementById("headerText");
+    const mainTitle = document.getElementById("mainTitle");
+    const mainText = document.getElementById("mainText");
+    const emojiIcon = document.getElementById("emojiIcon");
+    const imageTitle = document.getElementById("imageTitle");
+    const imageBox = document.getElementById("imageBox");
+    const mainHeaderBox = document.getElementById("mainHeaderBox");
+
+    getStartedBtn.addEventListener("click", function () {
+      mainHeader.textContent = "Mobile First Design Started";
+      headerText.textContent = "Header content changed using JavaScript.";
+      mainTitle.textContent = "DOM Manipulation is Working";
+      mainText.textContent = "When the button is clicked, JavaScript changes text, header, icon and colors.";
+      emojiIcon.textContent = "🚀";
+      imageTitle.textContent = "JavaScript Updated UI";
+      getStartedBtn.textContent = "Started Successfully";
+
+      mainHeaderBox.classList.remove("bg-emerald-600");
+      mainHeaderBox.classList.add("bg-blue-700");
+
+      imageBox.classList.remove("bg-emerald-100");
+      imageBox.classList.add("bg-blue-100", "scale-105", "duration-300");
+    });
+  </script>
+
+</body>
+</html>
